@@ -9,5 +9,11 @@ def main():
     for i in range(len(pL)-1):
         pL[i].win_against(pL[i+1])
 
+    p1, p2 = Player('p1'), Player('p2')
+    if random.random() < 0.5:
+        p1.win_against(p2)
+    else:
+        p2.win_against(p1)
+
 if __name__ == '__main__':
     main()
