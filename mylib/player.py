@@ -1,6 +1,6 @@
 class Player:
-    def __init__(self):
-        self.username = ''
+    def __init__(self, username = ''):
+        self.username = username
         self.win_count = 0
         self.lost_count = 0
     
